@@ -1,19 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import Navbar from "./components/Navbar";
-import Home from './components/Home';
-import './App.css'
+import Home from "./components/Home";
+import AboutPage from "./components/AboutPage";
+import EventsSection from "./components/EventsSection";
+
+import "./App.css";
+import "./components/AboutPage.css";
+import EventsPage from "./components/EventPage";
+import Member from "./components/Member";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <main className="bg-gray-900 min-h-screen"></main>
+   <>
+   <Navbar />
       <Home />
-    </div>
-
+      <AboutPage />
+      <EventsPage/>
+      <Member/>
+   </>
+      
   );
 }
 
-export default App
+export default App;
